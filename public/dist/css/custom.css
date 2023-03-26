@@ -1,0 +1,84 @@
+.d-none {
+    display: initial;
+}
+
+h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    color: inherit;
+    margin-left: 20px;
+}
+.card {
+    margin-bottom: 50px;
+}
+.breadcrumb {
+    margin-right: 20px;
+}
+.pagination {
+    display: inline-flex !important;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    color: white;
+    border-radius: 5px;
+    border-color: black;
+}
+.pagination-responsive {
+    overflow-x: auto;
+}
+
+.select-submit-btn {
+    padding-top: 11px;
+}
+.row.page-titles {
+    background: #fff;
+    padding: 14px 22px;
+    margin: 0 -25px 25px;
+}
+.set-custom-pagination-cms {
+    list-style: none !important;
+    display: flex !important;
+}
+.set-right-user {
+    margin-right: 113px;
+}
+.sub-select {
+    width: 35%;
+    padding-left: 6px;
+}
+.cat-select {
+    width: 97% !important;
+}
+.cms-select-manual{
+    /* width: 47% !important;
+    margin-top: -39px;
+    margin-left: -38px; */
+    top: 16px;
+    position: absolute;
+    left: 0;
+    padding-right: 2px !important;
+}
+.search-ml{
+    /* margin-left: 7rem; */
+    margin-left: auto;
+}
