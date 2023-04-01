@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\MoviesDetail;
 use App\Models\MoviesCategories;
 use App\Models\Language;
+use Illuminate\Support\Facades\URL;
 use Intervention\Image\ImageManagerStatic as Image;
 
 
@@ -40,13 +41,14 @@ class MoviesController extends Controller
             $fileWithExt = $request->file('movie_image');
             $filename =  date('Ymd-his'). "." .uniqid().".". $fileWithExt->clientExtension();
             $destinationPath = storage_path('app/public/movies/');
+            $path=URL::to('/'.'storage/movies/'.$filename);
             $coverImg=Image::make($fileWithExt->getRealPath())->resize(null, 1000, function ($constraint) {
                 $constraint->aspectRatio();
                 $constraint->upsize();
             });
             $coverImg->orientate();
             $coverImg->save($destinationPath . $filename, 75);
-            $moviedetails->movie_image  =   $filename;
+            $moviedetails->movie_image  =   $path;
         }
         $moviedetails->movie_name            =   $request->movie_name;
         $moviedetails->categories_id         =   $request->movie_category;

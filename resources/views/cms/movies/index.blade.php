@@ -47,7 +47,7 @@
                                 </td>
                                 <td>
                                     <span>
-                                        <img src="{{ asset('storage/movies/' . $moviedetail->movie_image) }}" width='80'
+                                        <img src="{{ $moviedetail->movie_image }}" width='80'
                                         height='80' />
                                     </span>
                                 </td>
