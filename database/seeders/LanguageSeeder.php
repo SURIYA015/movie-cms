@@ -14,7 +14,7 @@ class LanguageSeeder extends Seeder
      */
     public function run()
     {
-        $movie_languages    =   ['Tamil', 'English', 'Marathi','Hindi','Kannada','Malyalam'];
+        $movie_languages    =   ['Tamil', 'English', 'Marathi','Hindi','Kannada','Malyalam','Telugu'];
         foreach($movie_languages as $movie_language) {
             DB::table('languages')->insert([
                 "language" => $movie_language,
