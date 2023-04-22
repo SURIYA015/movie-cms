@@ -23,3 +23,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('getTamilMovies',[MoviesController::class,'getTamilMovies']);
 Route::get('getTeluguMovies',[MoviesController::class,'getTeluguMovies']);
 Route::get('getKannadaMovies',[MoviesController::class,'getKannadaMovies']);
+Route::get('getMalyalamMovies',[MoviesController::class,'getMalyalamMovies']);
+

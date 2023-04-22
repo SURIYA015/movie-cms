@@ -40,4 +40,15 @@ class MoviesController extends Controller
             'movies'    =>  $movies
         ]);
     }
+
+    public function getMalyalamMovies(){
+        $movies = MoviesDetail::where('languages_id',6)->get();
+        foreach($movies as $index => $movie){
+            $movies[$index]['categorie']    =   $movie->categories()->first()->categories;
+            $movies[$index]['language']     =   $movie->languages()->first()->language;
+        }
+        return response()->json([
+            'movies'    =>  $movies
+        ]);
+    }
 }
