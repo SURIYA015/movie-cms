@@ -24,4 +24,6 @@ Route::get('getTamilMovies',[MoviesController::class,'getTamilMovies']);
 Route::get('getTeluguMovies',[MoviesController::class,'getTeluguMovies']);
 Route::get('getKannadaMovies',[MoviesController::class,'getKannadaMovies']);
 Route::get('getMalyalamMovies',[MoviesController::class,'getMalyalamMovies']);
+Route::get('getHindiMovies',[MoviesController::class,'getHindiMovies']);
+
 
